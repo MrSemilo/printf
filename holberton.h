@@ -20,5 +20,10 @@ int printstring(va_list args);
 int printporcent(va_list args);
 int printint(va_list args);
 int printspace(va_list args);
+int printhexaMAY(va_list args);
+int printhexaMIN(va_list args);
+int printoctal(va_list args);
+int print_octal(unsigned int n, unsigned int rem);
+int printuint(va_list args);
 
 # endif
