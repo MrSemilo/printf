@@ -13,8 +13,9 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i = 0, j, count = 0;
 	print form[] = {{" %", printspace}, {"c", printchar}, {"%", printporcent},
-		{"s", printstring}, {"i", printint}, {"u", printuint},
-		{"X", printhexaMAY}, {"o", printoctal}, {"x", printhexaMIN}, {NULL, NULL}};
+			{"s", printstring}, {"i", printint}, {"u", printuint},
+			{"X", printhexaMAY}, {"o", printoctal}, {"x", printhexaMIN},
+			{NULL}, {NULL}};
 	if (!format || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 	va_start(args, format);
