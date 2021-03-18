@@ -1,0 +1,40 @@
+.\" Manpage.
+.\" To correct errors or typos.
+.TH man 3 "18 march 2021" "Holberton School 0x11. C - _printf"
+
+.SH NAME
+_printf() - takes input and prints to standard output.
+
+.SH SYNOPSIS
+#include "holberton.h"
+
+.SH Sintaxis
+int _printf(const char *format, ...)
+
+.SH format
+This is the string that contains the text to be written to stdout. 
+#include <stdarg.h>
+
+.SH DESCRIPTION
+The function _printf() sends formatted output to stdout and uses format
+specifiers to convert arguments into strings. The format specifiers are:
+FORMAT outputs a specified format relative to the specifier input.
+
+.SH Return Value
+_printf() function returns the number of characters printed (excluding the null byte used to end output to strings).
+
+SH Flags
+ %c \n Prints a character
+\n
+ %s \n Prints a string
+\n
+ %d \n Prints a decimal
+\n
+ %i \n Prints an integer
+\n
+ %r \n Prints a reversed string
+\n
+ %R \n Converts the input to a Rot13 code
+
+.B Author
+Camilo Valencia.
