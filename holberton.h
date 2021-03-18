@@ -25,7 +25,9 @@ int printhexaMIN(va_list args);
 int printoctal(va_list args);
 int print_octal(unsigned int n, unsigned int rem);
 int printuint(va_list args);
-
-int prin(const char *format, va_list args, print form[]);
+int printspace(va_list args);
+int printbinary(va_list args);
+int printrot13(va_list args);
+int printrevString(va_list args);
 
 # endif
