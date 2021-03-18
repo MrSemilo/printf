@@ -26,4 +26,6 @@ int printoctal(va_list args);
 int print_octal(unsigned int n, unsigned int rem);
 int printuint(va_list args);
 
+int prin(const char *format, va_list args, print form[]);
+
 # endif
